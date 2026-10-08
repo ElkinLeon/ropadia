@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ropa al Día, una tienda de ropa casual con prendas cómodas para todos los días. Conoce nuestro catálogo y nuestros horarios.">
+    <title>Ropa al Día | Tienda de ropa</title>
+    <link rel="icon" href="imagenes/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="inicio">
+        <div class="cabecera">
+            <a class="nombre-tienda" href="#inicio">
+                <img src="imagenes/logo.svg" alt="" width="48" height="48">
+                <span>Ropa al Día</span>
+            </a>
+            <button id="boton-menu" class="boton-menu" type="button" aria-controls="menu" aria-expanded="false">Menú</button>
+            <nav id="menu" aria-label="Menú principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#carrito">Carrito</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="presentacion" aria-labelledby="titulo-principal">
+            <div class="texto-presentacion">
+                <p class="subtitulo">TU TIENDA DE ROPA CASUAL</p>
+                <h1 id="titulo-principal">Ropa cómoda para tu día a día</h1>
+                <p>Encuentra prendas fáciles de combinar, para salir con amigos, ir a clase o disfrutar del fin de semana.</p>
+                <a class="boton" href="#catalogo">Ver catálogo</a>
+            </div>
+            <img class="foto-portada" src="imagenes/tienda.jpg" alt="Prendas de ropa organizadas en un perchero" width="700" height="480">
+        </section>
+
+        <section class="seccion" id="catalogo" aria-labelledby="titulo-catalogo">
+            <h2 id="titulo-catalogo">Nuestro catálogo</h2>
+            <p>Algunos básicos que puedes encontrar en nuestra tienda.</p>
+            <div class="productos">
+                <article class="producto">
+                    <img src="imagenes/camiseta.jpg" alt="Camiseta blanca de manga corta" width="500" height="600" loading="lazy">
+                    <div class="informacion-producto">
+                        <h3>Camiseta básica</h3>
+                        <p>Color blanco · Tallas S, M y L</p>
+                        <p class="precio">$35.000</p>
+                        <button class="boton agregar" type="button" data-id="1" data-nombre="Camiseta básica" data-precio="35000">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/jeans.jpg" alt="Pantalón de jean azul" width="500" height="600" loading="lazy">
+                    <div class="informacion-producto">
+                        <h3>Jean clásico</h3>
+                        <p>Color azul · Tallas 28 a 36</p>
+                        <p class="precio">$85.000</p>
+                        <button class="boton agregar" type="button" data-id="2" data-nombre="Jean clásico" data-precio="85000">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/sudadera.jpg" alt="Sudadera casual" width="500" height="600" loading="lazy">
+                    <div class="informacion-producto">
+                        <h3>Sudadera cómoda</h3>
+                        <p>Tallas S, M, L y XL</p>
+                        <p class="precio">$70.000</p>
+                        <button class="boton agregar" type="button" data-id="3" data-nombre="Sudadera cómoda" data-precio="70000">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="producto">
+                    <img src="imagenes/chaqueta.jpg" alt="Chaqueta de estilo casual" width="500" height="600" loading="lazy">
+                    <div class="informacion-producto">
+                        <h3>Chaqueta casual</h3>
+                        <p>Tallas S, M y L</p>
+                        <p class="precio">$110.000</p>
+                        <button class="boton agregar" type="button" data-id="4" data-nombre="Chaqueta casual" data-precio="110000">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+            <p id="aviso-carrito" class="aviso" role="status"></p>
+            <p class="nota">Precios en pesos colombianos. Consulta las tallas disponibles en tienda.</p>
+        </section>
+
+        <section class="seccion carrito" id="carrito" aria-labelledby="titulo-carrito">
+            <h2 id="titulo-carrito">Carrito de compras</h2>
+            <p id="carrito-vacio">Tu carrito está vacío.</p>
+            <ul id="lista-carrito"></ul>
+            <p class="total" aria-live="polite">Total: $<span id="total">0</span></p>
+            <button id="vaciar-carrito" class="boton" type="button" disabled>Vaciar carrito</button>
+            <p class="nota">El carrito es de práctica. No realiza compras y se borra al recargar la página.</p>
+            <noscript>Activa JavaScript en tu navegador para usar el carrito.</noscript>
+        </section>
+
+        <section class="seccion nosotros" id="nosotros" aria-labelledby="titulo-nosotros">
+            <h2 id="titulo-nosotros">Sobre nosotros</h2>
+            <p>En Ropa al Día nos gustan las prendas sencillas, cómodas y a buen precio. Somos una pequeña tienda de ropa casual para quienes quieren vestirse a su manera.</p>
+            <p>Te ayudamos a elegir tu talla y a encontrar una combinación que te guste. ¡Ven a conocernos!</p>
+        </section>
+
+        <section class="seccion" id="contacto" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Visítanos</h2>
+            <p>Acércate a nuestra tienda para conocer las prendas y probarte tus favoritas.</p>
+            <div class="datos-contacto">
+                <div>
+                    <h3>Dirección y contacto</h3>
+                    <p>Calle 10 # 15-20, local 2<br>Bogotá, Colombia</p>
+                    <p>Correo: contacto@ropaaldia.example</p>
+                </div>
+                <div>
+                    <h3>Horario de atención</h3>
+                    <p>Lunes a viernes: 9:00 a. m. a 6:00 p. m.</p>
+                    <p>Sábados: 10:00 a. m. a 4:00 p. m.</p>
+                    <p>Domingos y festivos: cerrado.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Ropa al Día</strong> · 2026</p>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
