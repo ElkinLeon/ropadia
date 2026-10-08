@@ -1,6 +1,6 @@
 # Ropa al Día
 
-Proyecto de tienda de ropa con HTML, CSS y JavaScript básico.
+Proyecto de tienda de ropa con HTML, CSS y JavaScript para clase de Desarrollo web.
 
 ## Abrir la página
 
@@ -37,4 +37,4 @@ El carrito no guarda datos al recargar ni procesa compras reales. El negocio y l
 
 Fotos: Nothing Ahead, Marina Podrez y Ron Lach en Pexels; TuanAnh Blue y kemal alkan en Unsplash.
 
-Icono de camiseta: [OpenMoji](https://openmoji.org/library/emoji-1F455/), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), sin modificaciones.
+Icono de camiseta: [OpenMoji](https://openmoji.org/library/emoji-1F455/), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
